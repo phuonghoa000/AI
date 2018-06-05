@@ -1,0 +1,44 @@
+@relation credit-g_test_1
+
+@attribute checking_status { '<0', '0<=X<200', '>=200', 'no checking'}
+@attribute duration numeric
+@attribute credit_history { 'no credits/all paid', 'all paid', 'existing paid', 'delayed previously', 'critical/other existing credit'}
+@attribute purpose { 'new car', 'used car', furniture/equipment, radio/tv, 'domestic appliance', repairs, education, vacation, retraining, business, other}
+@attribute credit_amount numeric
+@attribute savings_status { '<100', '100<=X<500', '500<=X<1000', '>=1000', 'no known savings'}
+@attribute employment { unemployed, '<1', '1<=X<4', '4<=X<7', '>=7'}
+@attribute installment_commitment numeric
+@attribute personal_status { 'male div/sep', 'female div/dep/mar', 'male single', 'male mar/wid', 'female single'}
+@attribute other_parties { none, 'co applicant', guarantor}
+@attribute residence_since numeric
+@attribute property_magnitude { 'real estate', 'life insurance', car, 'no known property'}
+@attribute age numeric
+@attribute other_payment_plans { bank, stores, none}
+@attribute housing { rent, own, 'for free'}
+@attribute existing_credits numeric
+@attribute job { 'unemp/unskilled non res', 'unskilled resident', skilled, 'high qualif/self emp/mgmt'}
+@attribute num_dependents numeric
+@attribute own_telephone { none, yes}
+@attribute foreign_worker { yes, no}
+
+@data
+'<0',6,'critical/other existing credit',radio/tv,1169,'no known savings','>=7',4,'male single',none,4,'real estate',67,none,own,2,skilled,1,yes,yes
+'0<=X<200',48,'existing paid',radio/tv,5951,'<100','1<=X<4',2,'female div/dep/mar',none,2,'real estate',22,none,own,1,skilled,1,none,yes
+'no checking',12,'critical/other existing credit',education,2096,'<100','4<=X<7',2,'male single',none,3,'real estate',49,none,own,1,'unskilled resident',2,none,yes
+'<0',42,'existing paid',furniture/equipment,7882,'<100','4<=X<7',2,'male single',guarantor,4,'life insurance',45,none,'for free',1,skilled,2,none,yes
+'<0',24,'delayed previously','new car',4870,'<100','1<=X<4',3,'male single',none,4,'no known property',53,none,'for free',2,skilled,2,none,yes
+'no checking',36,'existing paid',education,9055,'no known savings','1<=X<4',2,'male single',none,4,'no known property',35,none,'for free',1,'unskilled resident',2,yes,yes
+'no checking',24,'existing paid',furniture/equipment,2835,'500<=X<1000','>=7',3,'male single',none,4,'life insurance',53,none,own,1,skilled,1,none,yes
+'0<=X<200',36,'existing paid','used car',6948,'<100','1<=X<4',2,'male single',none,2,car,35,none,rent,1,'high qualif/self emp/mgmt',1,yes,yes
+'no checking',12,'existing paid',radio/tv,3059,'>=1000','4<=X<7',2,'male div/sep',none,4,'real estate',61,none,own,1,'unskilled resident',1,none,yes
+'0<=X<200',30,'critical/other existing credit','new car',5234,'<100',unemployed,4,'male mar/wid',none,2,car,28,none,own,2,'high qualif/self emp/mgmt',1,none,yes
+'0<=X<200',12,'existing paid','new car',1295,'<100','<1',3,'female div/dep/mar',none,1,car,25,none,rent,1,skilled,1,none,yes
+'<0',48,'existing paid',business,4308,'<100','<1',3,'female div/dep/mar',none,4,'life insurance',24,none,rent,1,skilled,1,none,yes
+'0<=X<200',12,'existing paid',radio/tv,1567,'<100','1<=X<4',1,'female div/dep/mar',none,1,car,22,none,own,1,skilled,1,yes,yes
+'<0',24,'critical/other existing credit','new car',1199,'<100','>=7',4,'male single',none,4,car,60,none,own,2,'unskilled resident',1,none,yes
+'<0',15,'existing paid','new car',1403,'<100','1<=X<4',2,'female div/dep/mar',none,4,car,28,none,rent,1,skilled,1,none,yes
+'<0',24,'existing paid',radio/tv,1282,'100<=X<500','1<=X<4',4,'female div/dep/mar',none,2,car,32,none,own,1,'unskilled resident',1,none,yes
+'no checking',24,'critical/other existing credit',radio/tv,2424,'no known savings','>=7',4,'male single',none,4,'life insurance',53,none,own,2,skilled,1,none,yes
+'<0',30,'no credits/all paid',business,8072,'no known savings','<1',2,'male single',none,3,car,25,bank,own,3,skilled,1,none,yes
+'0<=X<200',24,'existing paid','used car',12579,'<100','>=7',4,'female div/dep/mar',none,2,'no known property',44,none,'for free',1,'high qualif/self emp/mgmt',1,yes,yes
+'no checking',24,'existing paid',radio/tv,3430,'500<=X<1000','>=7',3,'male single',none,2,car,31,none,own,1,skilled,2,yes,yes
